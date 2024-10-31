@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapbox Delivery Mapping</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Mapbox GL JS CDN -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="map"></div>
+    <!-- Optional popups for visual guidance on markers -->
+    <div id="popup-parking" class="popup">Parking Lot</div>
+    <div id="popup-entrance" class="popup">Building Entrance</div>
+
+    <!-- Bottom Sheet UI for Journey Progress -->
+    <div id="bottom-sheet">
+        <!-- Drag Handle -->
+        <div id="drag-handle"></div>
+
+        <h3>Journey Progress</h3>
+        <div class="progress-container">
+            <div class="progress-line" id="progress-line"></div>
+            <ul id="journey-list">
+                <li id="step-start" class="progress-step">
+                    <div class="step-marker" id="marker-start"></div>
+                    <span>Start - Driver's Location</span>
+                </li>
+                <li id="step-parking" class="progress-step">
+                    <div class="step-marker" id="marker-parking"></div>
+                    <span>Arrived at Parking Lot</span>
+                </li>
+                <li id="step-entrance" class="progress-step">
+                    <div class="step-marker" id="marker-entrance"></div>
+                    <span>Arrived at Building Entrance</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
