@@ -1,5 +1,5 @@
 // Mapbox Access Token
-mapboxgl.accessToken = 'pk.eyJ1IjoiaGFvY2gwNDIzIiwiYSI6ImNtMmk1MGhzeDBpajAybXB5d3ZrMjJxa2oifQ.4aD8xH6BjwIb-HzlRNaSbQ';
+mapboxgl.accessToken = 'your API';
 
 // Coordinates for Parking Lot and Building Entrance
 const parkingLotCoords = [ -123.2487763774755, 49.27106955540924 ]; // Lon, Lat
